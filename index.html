@@ -161,13 +161,13 @@ nav.solid{background:rgba(16,11,8,.66);backdrop-filter:blur(16px) saturate(1.18)
 #stage{position:absolute;inset:0;z-index:2;touch-action:pan-y}
 #stage canvas{display:block;touch-action:pan-y}
 .bigword{position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-54%);font-family:var(--disp);font-weight:300;letter-spacing:.04em;line-height:.86;color:rgba(255,247,240,.06);font-size:clamp(110px,21vw,330px);white-space:nowrap;pointer-events:none;user-select:none}
-.hero-cap{position:absolute;z-index:3;left:clamp(18px,4vw,52px);bottom:clamp(26px,5vh,60px);max-width:min(520px,80vw);pointer-events:none;text-shadow:0 2px 22px rgba(0,0,0,.55)}
+.hero-cap{position:absolute;z-index:3;left:clamp(18px,4.5vw,110px);bottom:clamp(26px,5vh,72px);max-width:min(560px,80vw);pointer-events:none;text-shadow:0 2px 22px rgba(0,0,0,.55)}
 .hero-eyebrow{font-family:var(--serif);font-size:12px;letter-spacing:.42em;color:#f3937a;margin-bottom:14px;font-weight:600}
 .hero-h1{font-family:var(--serif);font-weight:700;font-size:clamp(28px,4.6vw,58px);line-height:1.12;letter-spacing:.01em;margin-bottom:14px;color:#fbf7f3}
 .hero-h1 em{font-style:normal;color:#ff7a5c}
 .hero-sub{font-size:13.5px;line-height:1.95;color:rgba(245,240,235,.82);max-width:430px;font-weight:400}
 .hero-sub .mono{color:#ffd9cf}
-.hero-hint{position:absolute;z-index:3;right:clamp(18px,4vw,52px);bottom:clamp(26px,5vh,60px);font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:rgba(245,240,235,.62);text-align:right;pointer-events:none}
+.hero-hint{position:absolute;z-index:3;right:clamp(18px,4.5vw,110px);bottom:clamp(26px,5vh,72px);font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:rgba(245,240,235,.62);text-align:right;pointer-events:none}
 .hero-hint .k{display:inline-block;border:1px solid rgba(255,255,255,.25);border-radius:6px;padding:2px 7px;margin-left:6px;background:rgba(255,255,255,.1)}
 .scrollcue{position:absolute;z-index:3;left:50%;bottom:18px;transform:translateX(-50%);width:1px;height:42px;background:linear-gradient(#ff7a5c,transparent);opacity:.6;pointer-events:none}
 /* nav text/search stay light in both states (bar is dark in both) */
@@ -180,7 +180,7 @@ nav #searchinput{color:#fff}
 nav #searchinput::placeholder{color:rgba(255,255,255,.6)}
 
 /* sections */
-.sec{position:relative;z-index:5;background:transparent;padding:clamp(70px,11vh,140px) clamp(18px,5vw,80px);max-width:1280px;margin:0 auto}
+.sec{position:relative;z-index:5;background:transparent;padding:clamp(70px,11vh,140px) clamp(18px,5vw,80px);max-width:min(1720px,94vw);margin:0 auto}
 .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:42px;flex-wrap:wrap}
 .sec-no{font-family:var(--mono);font-size:12px;color:var(--v);letter-spacing:.24em}
 .sec-title{font-family:var(--serif);font-weight:700;font-size:clamp(24px,3.4vw,40px);letter-spacing:.02em;margin-top:6px}
@@ -336,7 +336,7 @@ footer{position:relative;z-index:5;padding:60px clamp(18px,5vw,80px);max-width:1
 .dos-bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;filter:blur(16px) brightness(.66) saturate(1.05);opacity:.5;pointer-events:none}
 .dos-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(130% 100% at 50% -5%,rgba(243,241,238,.42),rgba(243,241,238,.82))}
 #dossier.show{opacity:1;visibility:visible}
-#dosinner{position:relative;z-index:1;max-width:980px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,3.6vw,44px);box-shadow:0 40px 100px rgba(36,31,27,.18);transform:translateY(26px);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+#dosinner{position:relative;z-index:1;max-width:min(1240px,94vw);margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,3.6vw,44px);box-shadow:0 40px 100px rgba(36,31,27,.18);transform:translateY(26px);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 #dossier.show #dosinner{transform:translateY(0)}
 .dos-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:26px}
 .dos-rank{font-family:var(--mono);font-size:12px;color:var(--v);letter-spacing:.12em;margin-bottom:8px}
@@ -977,7 +977,7 @@ footer{max-width:none;overflow:hidden;
     radial-gradient(130% 100% at 50% 0%, rgba(214,69,47,.07), rgba(214,69,47,0) 55%),
     linear-gradient(180deg,#120d0a 0%,#0a0705 74%,#070404 100%)}
 footer>*{position:relative;z-index:1}
-.foot-grid,.foot-bottom,.foot-giant,.foot-chap{max-width:1280px;margin-left:auto;margin-right:auto}
+.foot-grid,.foot-bottom,.foot-giant,.foot-chap{max-width:min(1720px,94vw);margin-left:auto;margin-right:auto}
 .foot-giant{margin-bottom:34px}
 #footembers{position:absolute;inset:0;z-index:0;pointer-events:none}
 .foot-chap{font-size:10.5px;letter-spacing:.34em;color:#e6b15c;margin:0 0 18px}
@@ -1166,14 +1166,7 @@ footer .totop:hover{color:#ff9a6b!important;border-color:#ff9a6b!important}
   .sec-en.sec-kan.kan-l{left:2px}.sec-en.sec-kan.kan-r{right:2px}
 }
 
-/* ═══ [X2] 説明文は見出しの構図に従う（sectionレベルで確実に） ═══ */
-.sec.h-right > .sec-desc{margin-left:auto}
-.sec.h-center > .sec-desc{margin-left:auto;margin-right:auto;text-align:center}
-.sec.h-vert > .sec-desc{margin-left:auto;max-width:340px}
-@media (max-width:760px){
-  .sec.h-right > .sec-desc,.sec.h-vert > .sec-desc{margin-left:0;max-width:520px}
-  .sec.h-center > .sec-desc{margin-left:0;margin-right:0;text-align:left}
-}
+/* ═══ [X2] 説明文は sec-head 内（軒先レール）へ移設済。構図別の位置規則は不要 ═══ */
 
 /* ═══ [X3] 和紙ライト章（弐・伍）：ページに明暗の律動を ═══ */
 .sec-light{background:
@@ -1212,8 +1205,7 @@ footer .totop:hover{color:#ff9a6b!important;border-color:#ff9a6b!important}
 
 @media (max-width:760px){.frame-img{height:190px;margin-bottom:30px}}
 
-/* h-center 章：中央descと水印の固有干渉を寸法で断つ */
-.sec.h-center > .sec-desc{max-width:460px}
+/* h-center 章の水印寸法（760-1199px帯用） */
 .h-center .sec-en.sec-kan{font-size:clamp(135px,12.5vw,200px);top:-0.2em}
 
 /* h-right章（弐・陸）: 直後の全幅パネルと干渉しない寸法へ */
@@ -1329,6 +1321,74 @@ main .sec-title.lit{animation:titleIgnite 1.5s ease-out 1}
 .cinema-line{letter-spacing:.06em}
 .hero-eyebrow{letter-spacing:.46em}
 
+/* ════════════════════════════════════════════════════════════════
+   EDITORIAL GRID PASS — 「路地の左右」
+   路地は一本の廊下ではない。左右の店先を覗きながら歩く。
+   ≥1200px: 各章＝2カラム。軒先レール(見出し・説明・水印・章内進捗)が
+   片側に sticky で留まり、本文が反対側を流れる。壱=左・弐=右…と交互。
+   幕間と結だけが全幅中央＝辻と夜明けの「間」。
+   モバイル/タブレットは従来レイアウト（.sec-body は素の div）。
+   ════════════════════════════════════════════════════════════════ */
+
+/* --- 説明文が軒先レール（sec-head内）へ移った分の余白調整（全幅共通） --- */
+.sec-head .sec-desc{margin-top:16px;margin-bottom:0!important}
+
+/* --- 章内進捗ライン：読む=灯が満ちる。split時のみ見せる --- */
+.chprog{display:none}
+
+@media (min-width:1200px){
+  .sec.split{display:grid;column-gap:clamp(48px,5vw,120px);
+    grid-template-columns:clamp(320px,26vw,470px) minmax(0,1fr)}
+  .sec.split.rail-r{grid-template-columns:minmax(0,1fr) clamp(320px,26vw,470px)}
+  .sec.split>.sec-head{grid-column:1;grid-row:1;align-self:start;
+    position:sticky;top:clamp(84px,12vh,128px);
+    display:block;margin-bottom:0}
+  .sec.split.rail-r>.sec-head{grid-column:2}
+  .sec.split>.sec-body{grid-column:2;grid-row:1;min-width:0}
+  .sec.split.rail-r>.sec-body{grid-column:1}
+
+  /* レール内は常に左揃え＝読みやすさ優先。構図クラスの右寄せ/中央は無効化 */
+  .sec.split .sec-head>div:first-child{text-align:left;display:block}
+  .sec.split .sec-head .sec-no{flex-direction:row;justify-content:flex-start}
+  .sec.split .sec-head.h-right .sec-desc,
+  .sec.split .sec-head .sec-desc{text-align:left!important;margin-left:0!important;margin-right:0!important;max-width:400px}
+  .sec.split .sec-head .en-cap{margin-left:0;margin-right:0;text-align:left;max-width:400px}
+  /* 肆の縦書きは狭レールでは横に戻す（可読性優先。760-1199pxでは縦書きが残る） */
+  .sec.split .sec-head.h-vert{min-height:0;justify-content:flex-start;align-items:stretch}
+  .sec.split .sec-head.h-vert>div:first-child{display:block}
+  .sec.split .sec-head.h-vert .sec-title{writing-mode:horizontal-tb;letter-spacing:.05em;min-height:0;line-height:1.2}
+  .sec.split .sec-head.h-vert .sec-no{writing-mode:horizontal-tb;flex-direction:row;gap:12px;height:auto}
+  .sec.split .sec-head.h-vert .sec-no::before{width:34px;height:1px}
+
+  /* 漢数字の水印：レールの肩に据える（stickyに同乗し、章の間ずっと佇む） */
+  .sec.split .sec-en.sec-kan{font-size:clamp(180px,15vw,280px);top:-0.14em;left:auto;right:-0.06em}
+
+  /* 章内進捗ライン */
+  .sec.split .chprog{display:block;width:1px;height:clamp(90px,15vh,160px);
+    margin-top:28px;background:rgba(255,255,255,.13);overflow:hidden}
+  .sec.split .chprog i{display:block;width:100%;height:100%;
+    background:linear-gradient(180deg,var(--vd),#e6b15c);
+    transform:scaleY(var(--chp,0));transform-origin:top;transition:transform .25s linear}
+
+  /* 本文カラムの器量：中身は列幅を使い切る */
+  .sec.split .frame-img{height:clamp(260px,40vh,480px)}
+  .sec.split #genregrid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .sec.split .gacha{max-width:720px}
+  .sec.split .quiz-card{max-width:720px}
+  .sec.split .rk-row{grid-template-columns:56px 1fr minmax(240px,430px) 88px;padding:20px 22px}
+  .sec.split .rk-name{font-size:clamp(16px,1.15vw,21px)}
+  .sec.split .rk-d{font-size:24px}
+  .sec.split .rk-row.top3 .rk-rank{font-size:34px}
+}
+/* 超ワイド：レールと本文の間をさらに広く、行間の空気も増やす */
+@media (min-width:1800px){
+  .sec.split{column-gap:clamp(120px,8vw,200px)}
+  .sec-desc{font-size:13.5px;line-height:2.3}
+}
+@media (prefers-reduced-motion:reduce){
+  .sec.split .chprog i{transition:none}
+}
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"採点しなおす — 隠れた名店候補",
@@ -1428,7 +1488,7 @@ main .sec-title.lit{animation:titleIgnite 1.5s ease-out 1}
 <main id="main">
   <section class="sec band" id="sec-ranking">
     <div class="sec-head">
-      <div><div class="sec-no">01 — RANKING</div><div class="sec-title">見過ごされ度ランキング</div></div>
+      <div><div class="sec-no">壱 — RANKING</div><div class="sec-title">見過ごされ度ランキング</div></div>
       <div class="sec-en">overlooked</div>
     </div>
     <p class="sec-desc" style="margin-bottom:30px">スレート色（帯内での位置）から朱色（評判での位置）へ伸びる距離が、そのまま「見過ごされ度」。距離が長いほど、点数の見た目より口コミの評価が高い候補。</p>
@@ -1438,7 +1498,7 @@ main .sec-title.lit{animation:titleIgnite 1.5s ease-out 1}
 
   <section class="sec" id="sec-genre">
     <div class="sec-head">
-      <div><div class="sec-no">02 — CUISINE</div><div class="sec-title">ジャンルから探す</div></div>
+      <div><div class="sec-no">弐 — CUISINE</div><div class="sec-title">ジャンルから探す</div></div>
       <div class="sec-en">by cuisine</div>
     </div>
     <p class="sec-desc" style="margin-bottom:30px">タイルを選ぶと、そのジャンルに当てはまる候補店が展開する。気になる店をタップで詳細へ。</p>
@@ -1459,7 +1519,7 @@ main .sec-title.lit{animation:titleIgnite 1.5s ease-out 1}
 
   <section class="sec band" id="sec-gacha">
     <div class="sec-head">
-      <div><div class="sec-no">03 — DISCOVER</div><div class="sec-title">発掘ガチャ</div></div>
+      <div><div class="sec-no">参 — DISCOVER</div><div class="sec-title">発掘ガチャ</div></div>
       <div class="sec-en">excavate</div>
     </div>
     <p class="sec-desc" style="margin-bottom:30px;text-align:center;margin-left:auto;margin-right:auto">387の候補から、今日の一軒をランダムに掘り起こす。ボタンを押してリールを回そう。</p>
@@ -1474,7 +1534,7 @@ main .sec-title.lit{animation:titleIgnite 1.5s ease-out 1}
 
   <section class="sec" id="sec-hashigo">
     <div class="sec-head">
-      <div><div class="sec-no">04 — COURSE</div><div class="sec-title">今夜のはしご</div></div>
+      <div><div class="sec-no">肆 — COURSE</div><div class="sec-title">今夜のはしご</div></div>
       <div class="sec-en">bar hopping</div>
     </div>
     <p class="sec-desc" style="margin-bottom:30px">軽く一杯 → メイン → 〆。候補店だけで組む三軒の夜のコース。</p>
@@ -1484,7 +1544,7 @@ main .sec-title.lit{animation:titleIgnite 1.5s ease-out 1}
 
   <section class="sec band" id="sec-quiz">
     <div class="sec-head">
-      <div><div class="sec-no">05 — QUIZ</div><div class="sec-title">目利きクイズ</div></div>
+      <div><div class="sec-no">伍 — QUIZ</div><div class="sec-title">目利きクイズ</div></div>
       <div class="sec-en">how sharp?</div>
     </div>
     <div class="quiz-card">
@@ -1502,7 +1562,7 @@ main .sec-title.lit{animation:titleIgnite 1.5s ease-out 1}
 
   <section class="sec" id="sec-theme">
     <div class="sec-head">
-      <div><div class="sec-no">06 — THEME</div><div class="sec-title">今日のテーマ</div></div>
+      <div><div class="sec-no">陸 — THEME</div><div class="sec-title">今日のテーマ</div></div>
       <div class="sec-en">today's craving</div>
     </div>
     <div class="theme-card" id="themecard"></div>
@@ -1511,7 +1571,7 @@ main .sec-title.lit{animation:titleIgnite 1.5s ease-out 1}
 
   <section class="sec band" id="sec-method">
     <div class="sec-head">
-      <div><div class="sec-no">07 — METHOD</div><div class="sec-title">方法と検証</div></div>
+      <div><div class="sec-no">漆 — METHOD</div><div class="sec-title">方法と検証</div></div>
       <div class="sec-en">methodology</div>
     </div>
     <div class="dotfield-wrap">
@@ -1700,7 +1760,7 @@ function dumbbellSVG(posy,posx){
   const W=300,pad=28,x0=pad,x1=W-pad,y=26;
   const X=p=>x0+(x1-x0)*(p/100);
   const a=X(posy),b=X(posx),lo=Math.min(a,b),hi=Math.max(a,b);
-  return `<svg viewBox="0 0 ${W} 52" width="100%" style="max-width:300px">
+  return `<svg viewBox="0 0 ${W} 52" width="100%" style="max-width:430px">
     <line x1="${x0}" y1="${y}" x2="${x1}" y2="${y}" stroke="#e2ddd5" stroke-width="1"/>
     <line x1="${lo}" y1="${y}" x2="${hi}" y2="${y}" stroke="${VD}" stroke-width="3" stroke-linecap="round"/>
     <circle cx="${a}" cy="${y}" r="6.5" fill="${B}"/>
@@ -3003,7 +3063,7 @@ function tagReveal(){
     if(head && q==='.cinema'){head.setAttribute('data-aos','fade-up');head.setAttribute('data-aos-duration','800');}
     // sec-head は章ごとの専用振付（choreo層）が担当
     let i=0;
-    sec.querySelectorAll(':scope > .sec-desc, .rk-wrap, .genre-grid, .gacha, .hashi-wrap, .quiz-card, .theme-card, .method-grid, .morebtn').forEach(el=>{
+    sec.querySelectorAll('.sec-head .sec-desc, .rk-wrap, .genre-grid, .gacha, .hashi-wrap, .quiz-card, .theme-card, .method-grid, .morebtn').forEach(el=>{
       el.setAttribute('data-aos','fade-up');
       el.setAttribute('data-aos-delay',String(70+(i%3)*70));
       el.setAttribute('data-aos-duration','850');
@@ -3290,6 +3350,7 @@ setTimeout(()=>{if(!loadDone)finishLoad();},6000);
         document.querySelectorAll('#navlinks a').forEach(function(x){ if(x.textContent===key) a=x; });
         if(a){ a.classList.add('act'); a.setAttribute('aria-current','true'); } }
     }
+    var chHeads={};   // 章ヘッダの遅延キャッシュ（章内進捗ライン --chp 用）
     function upd(){
       tick=false;
       var h=document.documentElement, max=h.scrollHeight-innerHeight;
@@ -3298,7 +3359,12 @@ setTimeout(()=>{if(!loadDone)finishLoad();},6000);
       if(fill) fill.style.transform='scaleY('+p+')';   // fill=null時は無害
       var line=innerHeight*0.42, best=-1;
       for(var i=0;i<SECS.length;i++){ var el=document.getElementById(SECS[i][0]); if(!el) continue;
-        if(el.getBoundingClientRect().top<=line) best=i; }
+        var r=el.getBoundingClientRect();
+        if(r.top<=line) best=i;
+        // 章内進捗: 読み進んだ分だけレールの縦線が朱→金に満ちる（過ぎた章は満灯のまま）
+        var hd=chHeads[SECS[i][0]]||(chHeads[SECS[i][0]]=el.querySelector('.sec-head'));
+        if(hd&&r.height>0) hd.style.setProperty('--chp', Math.max(0,Math.min(1,(line-r.top)/r.height)).toFixed(3));
+      }
       apply(best);
     }
     addEventListener('scroll',function(){ if(!tick){ tick=true; requestAnimationFrame(upd); } },{passive:true});
@@ -3374,7 +3440,7 @@ setTimeout(()=>{if(!loadDone)finishLoad();},6000);
       rg.addColorStop(1,'rgba(255,120,60,0)'); g.fillStyle=rg; g.fillRect(0,0,28,28); return s; })();
     var pts=[], W=0, H=0, prog=0, played=false;
     function layout(){
-      W=wrap.clientWidth||600; H=(innerWidth<760)?230:290;
+      W=wrap.clientWidth||600; H=(innerWidth<760)?230:(innerWidth>=1200?340:290);
       var dpr=Math.min(2,devicePixelRatio||1);
       cv.width=W*dpr; cv.height=H*dpr; cv.style.height=H+'px';
       ctx.setTransform(dpr,0,0,dpr,0,0);
@@ -3495,11 +3561,7 @@ setTimeout(()=>{if(!loadDone)finishLoad();},6000);
   var KAN=['壱','弐','参','肆','伍','陸','漆'];
   var URLTXT='aiueo99.github.io/izakaya20';
 
-  /* ── [N0] 章番号を全セクションに縫い付ける（一体感） ── */
-  SECS.forEach(function(id,i){
-    var el=document.querySelector('#'+id+' .sec-no');
-    if(el) el.textContent=el.textContent+'／'+KAN[i];
-  });
+  /* ── [N0] 章番号はHTML側で「漢数字 — EN」に一本化済（水印と重複する情報を持たない） ── */
 
   /* ── [N1] 七灯HUD ── */
   var hud=document.createElement('div'); hud.id='hud';
@@ -3839,6 +3901,19 @@ setTimeout(()=>{if(!loadDone)finishLoad();},6000);
       var ec=document.createElement('div'); ec.className='en-cap'; ec.textContent=ENCAP[i];
       head.firstElementChild.appendChild(ec);
     }
+    /* ═══ 路地の左右（Split-sticky編集グリッド）═══
+       章＝店先。説明文は見出しと共に「軒先レール」へ、本文は sec-body に括って
+       反対側を流す。壱=左・弐=右…と交互。適用は≥1200pxのCSSが担い、
+       モバイル/タブレットはDOMが同じまま従来レイアウトに落ちる。 */
+    var desc=null, ch=[].slice.call(sec.children);
+    ch.forEach(function(el){ if(el.classList&&el.classList.contains('sec-desc')&&!desc) desc=el; });
+    if(desc&&head.firstElementChild) head.firstElementChild.appendChild(desc);
+    var body=document.createElement('div'); body.className='sec-body';
+    [].slice.call(sec.children).forEach(function(el){ if(el!==head) body.appendChild(el); });
+    sec.appendChild(body);
+    sec.classList.add('split', i%2? 'rail-r':'rail-l');
+    var pg=document.createElement('div'); pg.className='chprog'; pg.setAttribute('aria-hidden','true');
+    pg.innerHTML='<i></i>'; head.firstElementChild.appendChild(pg);
   });
   /* 画像のクリップ出現（章ごとに向きを変える） */
   function frameImg(secId,beforeSel,photoIdx,cls){
